@@ -1,0 +1,44 @@
+# config.yaml
+dvr:
+  host: "192.168.1.100"          # IP do DVR Intelbras
+  rtsp_port: 554                 # Porta RTSP (padrão 554)
+  username: "admin"              # Usuário do DVR
+  password: "sua_senha"          # Senha do DVR
+  channels: [1, 2, 3, 4, 5, 6, 7, 8]  # Canais a monitorar
+  # Formato RTSP Intelbras/Dahua OEM: rtsp://user:pass@ip:554/cam/realmonitor?channel=X&subtype=0
+  rtsp_path_template: "/cam/realmonitor?channel={channel}&subtype=0"
+
+monitoring:
+  check_interval_seconds: 30     # Intervalo entre verificações
+  timeout_seconds: 10            # Timeout de conexão RTSP
+  consecutive_failures_alert: 3  # Alertar após N falhas consecutivas
+  cooldown_minutes: 15           # Cooldown entre alertas (minutos)
+
+alerts:
+  enabled: true
+  webhook_url: ""                # Opcional: URL de webhook (POST JSON)
+  telegram:
+    enabled: false
+    bot_token: ""
+    chat_id: ""
+  email:
+    enabled: false
+    smtp_host: ""
+    smtp_port: 587
+    username: ""
+    password: ""
+    to_email: ""
+
+storage:
+  db_path: "data/health.db"
+  retention_days: 30
+
+metrics:
+  prometheus_enabled: false
+  prometheus_port: 9090
+
+logging:
+  level: "INFO"
+  file: "logs/health_check.log"
+  max_bytes: 10485760
+  backup_count: 5
