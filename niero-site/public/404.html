@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title data-i18n="404.title">Página não encontrada | Niero</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="a11y.skipToContent">Pular para o conteúdo principal</a>
+    
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="Niero - Página inicial">
+                <img src="/assets/logo-niero.svg" alt="" class="logo-img" width="140" height="40">
+            </a>
+            
+            <nav class="nav-desktop" role="navigation" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/sobre/" class="nav-link" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="/servicos/" class="nav-link" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="/portfolio/" class="nav-link" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="/contato/" class="nav-link nav-link--cta" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+                    <button class="lang-btn lang-btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro/claro" aria-pressed="false">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span class="hamburger" aria-hidden="true">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle" hidden>
+        <div class="mobile-menu-inner">
+            <div class="mobile-menu-header">
+                <h2 id="mobileMenuTitle" class="visually-hidden" data-i18n="nav.menu">Menu</h2>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-nav" role="navigation" aria-label="Menu mobile">
+                <ul class="mobile-nav-list">
+                    <li><a href="/" class="mobile-nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/sobre/" class="mobile-nav-link" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="/servicos/" class="mobile-nav-link" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="/portfolio/" class="mobile-nav-link" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="/contato/" class="mobile-nav-link mobile-nav-link--cta" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+                    <button class="lang-btn lang-btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true" hidden></div>
+    
+    <main id="main-content" role="main">
+        <section class="error-section" aria-labelledby="error-title">
+            <div class="container">
+                <div class="error-content">
+                    <div class="error-code" aria-hidden="true">404</div>
+                    <h1 id="error-title" class="error-title" data-i18n="404.title">Página não encontrada</h1>
+                    <p class="error-message" data-i18n="404.message">Desculpe, a página que você procura não existe ou foi movida.</p>
+                    <p class="error-hint" data-i18n="404.hint">Pode ter digitado o endereço incorretamente ou o link pode estar desatualizado.
+                    
+                    <div class="error-actions">
+                        <a href="/" class="btn btn--primary btn--large" data-i18n="404.backHome">Voltar ao início</a>
+                        <a href="/contato/" class="btn btn--outline btn--large" data-i18n="404.contactSupport">Falar com suporte</a>
+                    </div>
+                    
+                    <div class="error-links">
+                        <p data-i18n="404.quickLinks">Links rápidos:</p>
+                        <nav aria-label="Navegação rápida">
+                        <ul class="error-quick-links">
+                            <li><a href="/servicos/" data-i18n="nav.services">Nossos Serviços</a></li>
+                            <li><a href="/portfolio/" data-i18n="nav.portfolio">Ver Portfólio</a></li>
+                            <li><a href="/sobre/" data-i18n="nav.about">Sobre a Niero</a></li>
+                            <li><a href="/contato/" data-i18n="nav.contact">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Niero - Página inicial">
+                        <img src="/assets/logo-niero-white.svg" alt="" width="140" height="40">
+                    </a>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Posicionamento e construção de marcas para profissionais da saúde mental.</p>
+                    <div class="footer-social" role="list" aria-label="Redes sociais">
+                        <a href="https://instagram.com/espacovivenciapsico" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/niero" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5511976186096" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.company">Empresa</h4>
+                        <ul>
+                            <li><a href="/sobre/" data-i18n="nav.about">Sobre nós</a></li>
+                            <li><a href="/servicos/" data-i18n="nav.services">Serviços</a></li>
+                            <li><a href="/portfolio/" data-i18n="nav.portfolio">Portfólio</a></li>
+                            <li><a href="/contato/" data-i18n="nav.contact">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.services">Serviços</h4>
+                        <ul>
+                            <li><a href="/servicos/#identidade-visual" data-i18n="services.item1.title">Identidade Visual</a></li>
+                            <li><a href="/servicos/#gestao-marca" data-i18n="services.item2.title">Gestão de Marca</a></li>
+                            <li><a href="/servicos/#fotografia" data-i18n="services.item3.title">Fotografia</a></li>
+                            <li><a href="/servicos/#decoracao" data-i18n="services.item4.title">Decoração de Ambientes</a></li>
+                            <li><a href="/servicos/#digital" data-i18n="services.item5.title">Sites e Apps</a></li>
+                            <li><a href="/servicos/#consultoria" data-i18n="services.item6.title">Consultoria</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.contact">Contato</h4>
+                        <ul>
+                            <li><a href="https://wa.me/5511976186096" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 97618-6096</a></li>
+                            <li><a href="mailto:contato@niero.com.br">contato@niero.com.br</a></li>
+                            <li><address>Vila Pires, Santo André - SP</address></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-i18n="footer.copyright">© 2025 Niero. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="/privacidade" data-i18n="footer.privacy">Política de Privacidade</a>
+                    <a href="/termos" data-i18n="footer.terms">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

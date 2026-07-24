@@ -1,0 +1,17 @@
+# robots.txt for Niero Site
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://niero.com.br/sitemap.xml
+
+# Disallow admin/private areas
+Disallow: /api/
+Disallow: /backend/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /_headers
+Disallow: /_redirects
+
+# Crawl delay (optional)
+Crawl-delay: 10

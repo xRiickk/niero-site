@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a Niero: especialistas em posicionamento e construção de marcas para profissionais da saúde mental. 9+ anos de experiência, 150+ projetos entregues.">
+    <title data-i18n="about.title">Sobre Nós | Niero</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="a11y.skipToContent">Pular para o conteúdo principal</a>
+    
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="Niero - Página inicial">
+                <img src="/assets/logo-niero.svg" alt="" class="logo-img" width="140" height="40">
+            </a>
+            
+            <nav class="nav-desktop" role="navigation" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/sobre/" class="nav-link" aria-current="page" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="/servicos/" class="nav-link" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="/portfolio/" class="nav-link" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="/contato/" class="nav-link nav-link--cta" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+                    <button class="lang-btn lang-btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro/claro" aria-pressed="false">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span class="hamburger" aria-hidden="true">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle" hidden>
+        <div class="mobile-menu-inner">
+            <div class="mobile-menu-header">
+                <h2 id="mobileMenuTitle" class="visually-hidden" data-i18n="nav.menu">Menu</h2>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-nav" role="navigation" aria-label="Menu mobile">
+                <ul class="mobile-nav-list">
+                    <li><a href="/" class="mobile-nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/sobre/" class="mobile-nav-link" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="/servicos/" class="mobile-nav-link" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="/portfolio/" class="mobile-nav-link" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="/contato/" class="mobile-nav-link mobile-nav-link--cta" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+                    <button class="lang-btn lang-btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true" hidden></div>
+    
+    <main id="main-content" role="main">
+        <!-- About Hero -->
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="page-hero-badge" data-i18n="about.heroBadge">Especialistas em saúde mental</span>
+                    <h1 id="page-title" class="page-title" data-i18n="about.heroTitle">Somos a Niero</h1>
+                    <p class="page-subtitle" data-i18n="about.heroSubtitle">Construímos marcas fortes, estratégicas e memoráveis para psicólogas, neuropsicólogas, psiquiatras e clínicas. Unimos identidade visual, gestão de marca, fotografia, decoração de ambientes e criação de sites para desenvolver marcas sólidas, com presença, consistência e valor em cada ponto de contato.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mission & Values -->
+        <section class="mission-section" aria-labelledby="mission-title">
+            <div class="container">
+                <div class="mission-grid">
+                    <article class="mission-card">
+                        <div class="mission-icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h2 id="mission-title" class="section-title" data-i18n="about.missionTitle">Nossa missão</h2>
+                        <p class="mission-text" data-i18n="about.missionText">Empoderar profissionais da saúde mental com marcas que comunicam sua excelência, ética e acolhimento — para que eles possam focar no que fazem de melhor: cuidar de pessoas.</p>
+                    </article>
+                    
+                    <article class="mission-card">
+                        <div class="mission-icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="mission-subtitle" data-i18n="about.visionTitle">Nossa visão</h3>
+                        <p class="mission-text" data-i18n="about.visionText">Ser a referência em branding para saúde mental no Brasil, reconhecida pela profundidade estratégica, sensibilidade estética e resultados mensuráveis para nossos clientes.</p>
+                    </article>
+                    
+                    <article class="mission-card">
+                        <div class="mission-icon" aria-hidden="true">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mission-subtitle" data-i18n="about.valuesTitle">Nossos valores</h3>
+                        <ul class="values-list" role="list">
+                            <li data-i18n="about.value1"><strong>Ética acima de tudo</strong> — Respeitamos o código de ética da psicologia e a sensibilidade do setor</li>
+                            <li data-i18n="about.value2"><strong>Escuta profunda</strong> — Entendemos sua história antes de desenhar sua marca</li>
+                            <li data-i18n="about.value3"><strong>Excelência técnica</strong> — Unimos estratégia, design e tecnologia de ponta</li>
+                            <li data-i18n="about.value4"><strong>Parceria de verdade</strong> — Crescemos junto com você, no longo prazo</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Story Section -->
+        <section class="story-section" aria-labelledby="story-title">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-content">
+                        <h2 id="story-title" class="section-title" data-i18n="about.storyTitle">Nossa história</h2>
+                        <div class="story-text">
+                            <p data-i18n="about.storyP1">A Niero nasceu da percepção de que profissionais da saúde mental — psicólogas, neuropsicólogas, psiquiatras — muitas vezes têm uma excelência técnica impecável, mas dificuldade em comunicar seu valor através da marca.</p>
+                            <p data-i18n="about.storyP2">O mercado de branding tradicional não entende as nuances do setor: a ética do CFP, a sensibilidade do acolhimento, a autoridade que transmite confiança sem parecer comercial. Era preciso uma abordagem diferente.</p>
+                            <p data-i18n="about.storyP3">Desde 2016, unimos nossa expertise em design estratégico, fotografia, arquitetura de interiores e tecnologia para criar uma metodologia própria: o Branding 360° para Saúde Mental. Cada projeto integra identidade visual, gestão de marca, fotografia profissional, ambientação de consultórios e presença digital — tudo conversando a mesma língua.</p>
+                            <p data-i18n="about.storyP4">Hoje, somamos mais de 150 projetos entregues para profissionais e clínicas em todo o Brasil. Nossa maior satisfação é ver nossos clientes conquistando mais pacientes, aumentando seu ticket médio e, principalmente, sendo reconhecidos pela excelência que já entregavam.</p>
+                        </div>
+                        <a href="/contato/" class="btn btn--primary" data-i18n="about.storyCta">Quer fazer parte dessa história?</a>
+                    </div>
+                    
+                    <div class="story-image" aria-hidden="true">
+                        <div class="story-image-wrapper">
+                            <img src="/assets/about-story.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="stats-section" aria-labelledby="stats-title">
+            <div class="container">
+                <h2 id="stats-title" class="visually-hidden" data-i18n="about.statsTitle">Nossos números</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="9">0</div>
+                        <div class="stat-label" data-i18n="about.statYears">Anos de experiência</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label" data-i18n="about.statProjects">Projetos entregues</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label" data-i18n="about.statSatisfaction">% Satisfação dos clientes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label" data-i18n="about.statSpecialties">Especialidades atendidas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label" data-i18n="about.statCities">Cidades atendidas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-count="30">0</div>
+                        <div class="stat-label" data-i18n="about.statTeam">Profissionais na equipe</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section class="team-section" aria-labelledby="team-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="team-title" class="section-title" data-i18n="about.teamTitle">Quem faz a Niero</h2>
+                    <p class="section-subtitle" data-i18n="about.teamSubtitle">Uma equipe multidisciplinar apaixonada por marcas e saúde mental</p>
+                </header>
+                
+                <div class="team-grid">
+                    <article class="team-card">
+                        <div class="team-image" aria-hidden="true">
+                            <div class="team-image-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Fundador(a) & Direção Criativa</h3>
+                            <p class="team-role" data-i18n="about.founderRole">Estrategista de marca com 15+ anos de experiência em design, branding e saúde mental</p>
+                        </div>
+                    </article>
+                    
+                    <article class="team-card">
+                        <div class="team-image" aria-hidden="true">
+                            <div class="team-image-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Fotografia & Direção de Arte</h3>
+                            <p class="team-role" data-i18n="about.photoRole">Especialista em retratos corporativos, lifestyle e fotografia de ambientes para saúde</p>
+                        </div>
+                    </article>
+                    
+                    <article class="team-card">
+                        <div class="team-image" aria-hidden="true">
+                            <div class="team-image-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Arquitetura & Ambientação</h3>
+                            <p class="team-role" data-i18n="about.archRole">Arquiteta especializada em consultórios e clínicas — fluxo, acolhimento e identidade espacial</p>
+                        </div>
+                    </article>
+                    
+                    <article class="team-card">
+                        <div class="team-image" aria-hidden="true">
+                            <div class="team-image-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="1" y="1" width="22" height="22" rx="2"></rect>
+                                    <path d="M1 12h22"></path>
+                                    <path d="M12 1v22"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3 class="team-name">Desenvolvimento & Tecnologia</h3>
+                            <p class="team-role" data-i18n="about.devRole">Sites, sistemas de agendamento, apps e automações — performance, LGPD e UX</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Differentials -->
+        <section class="differentials-section" aria-labelledby="differentials-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="differentials-title" class="section-title" data-i18n="about.diffTitle">Por que escolher a Niero?</h2>
+                    <p class="section-subtitle" data-i18n="about.diffSubtitle">Diferenciais que fazem a diferença no resultado final</p>
+                </header>
+                
+                <div class="differentials-grid">
+                    <article class="differential-card">
+                        <div class="differential-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about.diff1.title">Especialização real em saúde mental</h3>
+                        <p data-i18n="about.diff1.desc">Não somos generalistas. Conhecemos o CFP, a ética, a jornada do paciente, a linguagem técnica. Isso evita retrabalho e riscos.</p>
+                    </article>
+                    
+                    <article class="differential-card">
+                        <div class="differential-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="2"></rect>
+                                <path d="M16 12h-8"></path>
+                                <path d="M12 8v8"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about.diff2.title">Branding 360° integrado</h3>
+                        <p data-i18n="about.diff2.desc">Identidade, foto, site, ambiente, gestão — tudo feito pela mesma equipe, garantindo consistência total sem você gerenciar múltiplos fornecedores.</p>
+                    </article>
+                    
+                    <article class="differential-card">
+                        <div class="differential-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about.diff3.title">Metodologia própria validada</h3>
+                        <p data-i18n="about.diff3.desc">Processo de 4 etapas (Descoberta → Estratégia → Criação → Entrega) testado em 150+ projetos, com entregáveis claros e cronograma cumprido.</p>
+                    </article>
+                    
+                    <article class="differential-card">
+                        <div class="differential-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about.diff4.title">Gestão de marca contínua</h3>
+                        <p data-i18n="about.diff4.desc">Não entregamos e sumimos. Oferecemos governança, templates, mentoria e suporte para sua marca evoluir com consistência ao longo dos anos.</p>
+                    </article>
+                    
+                    <article class="differential-card">
+                        <div class="differential-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about.diff5.title">Consultoria estratégica inclusa</h3>
+                        <p data-i18n="about.diff5.desc">Todo projeto inclui diagnóstico, posicionamento e roadmap. Você não recebe só um logo — recebe uma estratégia de negócio via marca.</p>
+                    </article>
+                    
+                    <article class="differential-card">
+                        <div class="differential-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3 data-i18n="about.diff6.title">Ética e compliance garantidos</h3>
+                        <p data-i18n="about.diff6.desc">Todos os materiais respeitam o Código de Ética do CFP, LGPD e normas do CRECI/CAU. Zero risco de infração para você.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title" class="cta-title" data-i18n="cta.title">Vamos construir sua marca juntos?</h2>
+                    <p class="cta-subtitle" data-i18n="cta.subtitle">Agende uma conversa sem compromisso. Vamos entender seu momento e mostrar como a Niero pode ajudar.</p>
+                    <a href="/contato/" class="btn btn--primary btn--large" data-i18n="cta.button">Iniciar conversa</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Niero - Página inicial">
+                        <img src="/assets/logo-niero-white.svg" alt="" width="140" height="40">
+                    </a>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Posicionamento e construção de marcas para profissionais da saúde mental.</p>
+                    <div class="footer-social" role="list" aria-label="Redes sociais">
+                        <a href="https://instagram.com/espacovivenciapsico" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/niero" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5511976186096" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.company">Empresa</h4>
+                        <ul>
+                            <li><a href="/sobre/" data-i18n="nav.about">Sobre nós</a></li>
+                            <li><a href="/servicos/" data-i18n="nav.services">Serviços</a></li>
+                            <li><a href="/portfolio/" data-i18n="nav.portfolio">Portfólio</a></li>
+                            <li><a href="/contato/" data-i18n="nav.contact">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.services">Serviços</h4>
+                        <ul>
+                            <li><a href="/servicos/#identidade-visual" data-i18n="services.item1.title">Identidade Visual</a></li>
+                            <li><a href="/servicos/#gestao-marca" data-i18n="services.item2.title">Gestão de Marca</a></li>
+                            <li><a href="/servicos/#fotografia" data-i18n="services.item3.title">Fotografia</a></li>
+                            <li><a href="/servicos/#decoracao" data-i18n="services.item4.title">Decoração de Ambientes</a></li>
+                            <li><a href="/servicos/#digital" data-i18n="services.item5.title">Sites e Apps</a></li>
+                            <li><a href="/servicos/#consultoria" data-i18n="services.item6.title">Consultoria</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.contact">Contato</h4>
+                        <ul>
+                            <li><a href="https://wa.me/5511976186096" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 97618-6096</a></li>
+                            <li><a href="mailto:contato@niero.com.br">contato@niero.com.br</a></li>
+                            <li><address>Vila Pires, Santo André - SP</address></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-i18n="footer.copyright">© 2025 Niero. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="/privacidade" data-i18n="footer.privacy">Política de Privacidade</a>
+                    <a href="/termos" data-i18n="footer.terms">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

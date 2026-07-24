@@ -1,0 +1,17 @@
+# Redirects for Cloudflare Pages
+# Format: from_path to_path status_code
+
+# API routes (handled by Cloudflare Functions if needed)
+/api/*  https://niero-api.your-worker.workers.dev/api/:splat  301
+
+# Legacy URLs (if migrating from old site)
+/portfolio.html  /portfolio/  301
+/services.html  /servicos/  301
+/about.html  /sobre/  301
+/contact.html  /contato/  301
+
+# Language-specific redirects (if needed)
+/en/*  /:splat  301
+
+# SPA fallback (if using client-side routing)
+# /*  /index.html  200

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a Niero. Agende uma conversa sobre seu projeto de branding para saúde mental.">
+    <title data-i18n="contact.title">Contato | Niero</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="a11y.skipToContent">Pular para o conteúdo principal</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="Niero - Página inicial">
+                <img src="/assets/logo-niero.svg" alt="" class="logo-img" width="140" height="40">
+            </a>
+            
+            <nav class="nav-desktop" role="navigation" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/sobre/" class="nav-link" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="/servicos/" class="nav-link" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="/portfolio/" class="nav-link" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="/contato/" class="nav-link nav-link--cta" aria-current="page" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+                    <button class="lang-btn lang-btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro/claro" aria-pressed="false">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span class="hamburger" aria-hidden="true">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle" hidden>
+        <div class="mobile-menu-inner">
+            <div class="mobile-menu-header">
+                <h2 id="mobileMenuTitle" class="visually-hidden" data-i18n="nav.menu">Menu</h2>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-nav" role="navigation" aria-label="Menu mobile">
+                <ul class="mobile-nav-list">
+                    <li><a href="/" class="mobile-nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/sobre/" class="mobile-nav-link" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="/servicos/" class="mobile-nav-link" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="/portfolio/" class="mobile-nav-link" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="/contato/" class="mobile-nav-link mobile-nav-link--cta" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+                    <button class="lang-btn lang-btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true" hidden></div>
+    
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Contact Hero -->
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 id="page-title" class="page-title" data-i18n="contact.title">Vamos conversar?</h1>
+                    <p class="page-subtitle" data-i18n="contact.subtitle">Preencha o formulário ou chame no WhatsApp. Respondemos em até 24h úteis.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Form Section -->
+        <section class="contact-section" aria-labelledby="contact-form-title">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2 id="contact-form-title" class="section-title" data-i18n="contact.formTitle">Envie sua mensagem</h2>
+                        <p class="section-subtitle" data-i18n="contact.formSubtitle">Conte um pouco sobre seu projeto e como podemos ajudar.</p>
+                        <form class="contact-form" id="contactForm" action="/api/contact" method="POST" data-ajax novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label" data-i18n="contact.fieldName">Nome completo *</label>
+                                    <input type="text" id="name" name="name" class="form-input" required autocomplete="name" aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label" data-i18n="contact.fieldEmail">E-mail *</label>
+                                    <input type="email" id="email" name="email" class="form-input" required autocomplete="email" aria-required="true">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone" class="form-label" data-i18n="contact.fieldPhone">WhatsApp/Telefone</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" autocomplete="tel" placeholder="(11) 99999-9999">
+                                </div>
+                                <div class="form-group">
+                                    <label for="service" class="form-label" data-i18n="contact.fieldService">Serviço de interesse</label>
+                                    <select id="service" name="service" class="form-select">
+                                        <option value="" data-i18n="contact.selectService">Selecione...</option>
+                                        <option value="identidade-visual" data-i18n="services.item1.title">Identidade Visual</option>
+                                        <option value="gestao-marca" data-i18n="services.item2.title">Gestão de Marca</option>
+                                        <option value="fotografia" data-i18n="services.item3.title">Fotografia Profissional</option>
+                                        <option value="decoracao" data-i18n="services.item4.title">Decoração de Ambientes</option>
+                                        <option value="sites-apps" data-i18n="services.item5.title">Sites e Apps</option>
+                                        <option value="consultoria" data-i18n="services.item6.title">Consultoria Estratégica</option>
+                                        <option value="outro" data-i18n="contact.other">Outro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label" data-i18n="contact.fieldMessage">Mensagem *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required aria-required="true" placeholder="Conte sobre seu projeto, objetivos e prazo..."></textarea>
+                            </div>
+                            
+                            <!-- Honeypot for spam protection -->
+                            <div class="form-group honeypot" aria-hidden="true">
+                                <label for="website" class="visually-hidden">Não preencha este campo</label>
+                                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            
+                            <button type="submit" class="btn btn--primary btn--large btn--full" data-i18n="contact.submitBtn">
+                                <span class="btn-text">Enviar mensagem</span>
+                                <span class="btn-loading" aria-hidden="true">
+                                    <svg class="spinner" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+                                        <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path>
+                                    </svg>
+                                    Enviando...
+                                </span>
+                            </button>
+                            
+                            <p class="form-note" data-i18n="contact.privacyNote">Ao enviar, você concorda com nossa <a href="/privacidade">Política de Privacidade</a>. Seus dados não serão compartilhados com terceiros.</p>
+                        </form>
+                        
+                        <!-- Success Message (hidden by default) -->
+                        <div class="form-success" id="formSuccess" hidden role="alert">
+                            <svg class="success-icon" aria-hidden="true" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <h3 data-i18n="contact.successTitle">Mensagem enviada!</h3>
+                            <p data-i18n="contact.successMessage">Obrigado pelo contato. Retornaremos em até 24h úteis via WhatsApp ou e-mail.</p>
+                            <button type="button" class="btn btn--outline" id="sendAnother" data-i18n="contact.sendAnother">Enviar outra mensagem</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Methods -->
+                    <aside class="contact-methods">
+                        <h2 class="section-title" data-i18n="contact.otherWays">Outras formas de contato</h2>
+                        
+                        <div class="contact-methods-list">
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/5511976186096?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20meu%20projeto%20com%20a%20Niero." target="_blank" rel="noopener noreferrer" class="contact-method contact-method--whatsapp">
+                                <div class="contact-method-icon">
+                                    <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    </svg>
+                                </div>
+                                <div class="contact-method-content">
+                                    <h3 data-i18n="contact.whatsappTitle">WhatsApp</h3>
+                                    <p data-i18n="contact.whatsappDesc">Resposta mais rápida</p>
+                                    <span class="contact-method-value">(11) 97618-6096</span>
+                                </div>
+                                <svg class="contact-method-arrow" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                            
+                            <!-- Email -->
+                            <a href="mailto:contato@niero.com.br" class="contact-method contact-method--email">
+                                <div class="contact-method-icon">
+                                    <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="contact-method-content">
+                                    <h3 data-i18n="contact.emailTitle">E-mail</h3>
+                                    <p data-i18n="contact.emailDesc">Para propostas detalhadas</p>
+                                    <span class="contact-method-value">contato@niero.com.br</span>
+                                </div>
+                                <svg class="contact-method-arrow" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                            
+                            <!-- Location -->
+                            <div class="contact-method contact-method--location">
+                                <div class="contact-method-icon">
+                                    <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div class="contact-method-content">
+                                    <h3 data-i18n="contact.locationTitle">Localização</h3>
+                                    <p data-i18n="contact.locationDesc">Atendimento presencial e online</p>
+                                    <span class="contact-method-value">Vila Pires, Santo André - SP</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div class="contact-social">
+                            <p class="contact-social-label" data-i18n="contact.followUs">Nos acompanhe</p>
+                            <div class="social-links" role="list" aria-label="Redes sociais">
+                                <a href="https://instagram.com/espacovivenciapsico" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram" role="listitem">
+                                    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                                <a href="https://linkedin.com/company/niero" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" role="listitem">
+                                    <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                        <circle cx="4" cy="4" r="2"></circle>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq-section" aria-labelledby="faq-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="faq-title" class="section-title" data-i18n="faq.title">Perguntas frequentes</h2>
+                    <p class="section-subtitle" data-i18n="faq.subtitle">Dúvidas comuns sobre nosso processo e serviços</p>
+                </header>
+                
+                <div class="faq-grid">
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="faq.q1">Como funciona o processo de branding?</summary>
+                        <div class="faq-answer" data-i18n="faq.a1">Começamos com um diagnóstico profundo da sua marca atual e objetivos. Em seguida, desenvolvemos a estratégia (posicionamento, tom de voz, arquitetura) e depois a identidade visual. Todo o processo é colaborativo, com etapas de validação.</div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="faq.q2">Qual o prazo médio de um projeto?</summary>
+                        <div class="faq-answer" data-i18n="faq.a2">Um projeto completo de identidade visual leva de 4 a 8 semanas. Projetos 360° (incluindo site, fotografia e ambientação) podem levar de 8 a 12 semanas. O cronograma é definido no início.</div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="faq.q3">Atendem apenas profissionais de saúde mental?</summary>
+                        <div class="faq-answer" data-i18n="faq.a3">Nosso foco principal e especialidade é a saúde mental (psicólogos, neuropsicólogos, psiquiatras, clínicas). Porém, atendemos profissionais de saúde em geral e alguns casos selecionados de wellness.</div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="faq.q4">Como é feito o pagamento?</summary>
+                        <div class="faq-answer" data-i18n="faq.a4">Trabalhamos com 50% na assinatura do contrato e 50% na entrega final. Para projetos maiores, podemos dividir em 3 ou 4 parcelas. Aceitamos PIX, transferência e cartão.</div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="faq.q5">Vocês fazem apenas a identidade visual ou o site também?</summary>
+                        <div class="faq-answer" data-i18n="faq.a5">Fazemos ambos, integrados. O ideal é que identidade e site sejam feitos juntos para garantir consistência. Mas também criamos sites para marcas que já têm identidade definida.</div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary class="faq-question" data-i18n="faq.q6">Posso contratar apenas fotografia ou decoração?</summary>
+                        <div class="faq-answer" data-i18n="faq.a6">Sim! Cada serviço pode ser contratado de forma avulsa. Mas a mágica acontece quando integramos tudo — sua marca fala a mesma língua em todos os pontos de contato.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title" class="cta-title" data-i18n="cta.title">Pronta para transformar sua marca?</h2>
+                    <p class="cta-subtitle" data-i18n="cta.subtitle">Vamos conversar sobre seu projeto e entender como a Niero pode ajudar a construir uma marca forte, consistente e memorável.</p>
+                    <a href="https://wa.me/5511976186096?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20meu%20projeto%20com%20a%20Niero." class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" data-i18n="cta.button">Conversar no WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Niero - Página inicial">
+                        <img src="/assets/logo-niero-white.svg" alt="" width="140" height="40">
+                    </a>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Posicionamento e construção de marcas para profissionais da saúde mental.</p>
+                    <div class="footer-social" role="list" aria-label="Redes sociais">
+                        <a href="https://instagram.com/espacovivenciapsico" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/niero" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5511976186096" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.company">Empresa</h4>
+                        <ul>
+                            <li><a href="/sobre/" data-i18n="nav.about">Sobre nós</a></li>
+                            <li><a href="/servicos/" data-i18n="nav.services">Serviços</a></li>
+                            <li><a href="/portfolio/" data-i18n="nav.portfolio">Portfólio</a></li>
+                            <li><a href="/contato/" data-i18n="nav.contact">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.services">Serviços</h4>
+                        <ul>
+                            <li><a href="/servicos/#identidade-visual" data-i18n="services.item1.title">Identidade Visual</a></li>
+                            <li><a href="/servicos/#gestao-marca" data-i18n="services.item2.title">Gestão de Marca</a></li>
+                            <li><a href="/servicos/#fotografia" data-i18n="services.item3.title">Fotografia</a></li>
+                            <li><a href="/servicos/#decoracao" data-i18n="services.item4.title">Decoração de Ambientes</a></li>
+                            <li><a href="/servicos/#digital" data-i18n="services.item5.title">Sites e Apps</a></li>
+                            <li><a href="/servicos/#consultoria" data-i18n="services.item6.title">Consultoria</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.contact">Contato</h4>
+                        <ul>
+                            <li><a href="https://wa.me/5511976186096" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 97618-6096</a></li>
+                            <li><a href="mailto:contato@niero.com.br">contato@niero.com.br</a></li>
+                            <li><address>Vila Pires, Santo André - SP</address></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-i18n="footer.copyright">© 2025 Niero. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="/privacidade" data-i18n="footer.privacy">Política de Privacidade</a>
+                    <a href="/termos" data-i18n="footer.terms">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
