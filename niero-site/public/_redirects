@@ -1,17 +1,14 @@
-# Redirects for Cloudflare Pages
+# Netlify Redirects - Clean URLs
 # Format: from_path to_path status_code
 
-# API routes (handled by Cloudflare Functions if needed)
-/api/*  https://niero-api.your-worker.workers.dev/api/:splat  301
+# Trailing slash normalization (directory index)
+/*/  /:splat/index.html  200
 
-# Legacy URLs (if migrating from old site)
-/portfolio.html  /portfolio/  301
-/services.html  /servicos/  301
-/about.html  /sobre/  301
-/contact.html  /contato/  301
+# Legacy .html URLs → clean URLs
+/*.html  /:splat/  301
 
-# Language-specific redirects (if needed)
-/en/*  /:splat  301
+# API routes (if using Netlify Functions)
+/api/*  /.netlify/functions/:splat  200
 
-# SPA fallback (if using client-side routing)
+# SPA fallback (if needed later)
 # /*  /index.html  200
