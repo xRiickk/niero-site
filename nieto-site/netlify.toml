@@ -5,6 +5,12 @@
   # No build step - vanilla HTML/CSS/JS
   command = ""
   publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  # Disable framework detection (Hugo, etc.)
+  NETLIFY_FRAMEWORK = "none"
+  NODE_VERSION = "18"
 
 # Clean URLs: /sobre/ → /sobre/index.html
 [[redirects]]
