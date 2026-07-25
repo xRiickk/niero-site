@@ -1,0 +1,14 @@
+# Netlify Redirects - Clean URLs
+# Format: from_path to_path status_code
+
+# Trailing slash normalization (directory index)
+/*/  /:splat/index.html  200
+
+# Legacy .html URLs → clean URLs
+/*.html  /:splat/  301
+
+# API routes (if using Netlify Functions)
+/api/*  /.netlify/functions/:splat  200
+
+# SPA fallback (if needed later)
+# /*  /index.html  200

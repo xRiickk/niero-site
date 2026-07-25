@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça os serviços da Niero: Identidade Visual, Gestão de Marca, Fotografia Profissional, Decoração de Ambientes, Sites e Apps, Consultoria Estratégica. Especialistas em marcas para saúde mental.">
+    <title data-i18n="services.title">Serviços | Niero</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+    <a href="#main-content" class="skip-link" data-i18n="a11y.skipToContent">Pular para o conteúdo principal</a>
+    
+    <header class="header" role="banner">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="Niero - Página inicial">
+                <img src="/assets/logo-niero.svg" alt="" class="logo-img" width="140" height="40">
+            </a>
+            
+            <nav class="nav-desktop" role="navigation" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/sobre/" class="nav-link" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="/servicos/" class="nav-link" aria-current="page" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="/portfolio/" class="nav-link" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="/contato/" class="nav-link nav-link--cta" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+                    <button class="lang-btn lang-btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo escuro/claro" aria-pressed="false">
+                    <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span class="hamburger" aria-hidden="true">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle" hidden>
+        <div class="mobile-menu-inner">
+            <div class="mobile-menu-header">
+                <h2 id="mobileMenuTitle" class="visually-hidden" data-i18n="nav.menu">Menu</h2>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fechar menu">
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-nav" role="navigation" aria-label="Menu mobile">
+                <ul class="mobile-nav-list">
+                    <li><a href="/" class="mobile-nav-link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="/sobre/" class="mobile-nav-link" data-i18n="nav.about">Sobre</a></li>
+                    <li><a href="/servicos/" class="mobile-nav-link" data-i18n="nav.services">Serviços</a></li>
+                    <li><a href="/portfolio/" class="mobile-nav-link" data-i18n="nav.portfolio">Portfólio</a></li>
+                    <li><a href="/contato/" class="mobile-nav-link mobile-nav-link--cta" data-i18n="nav.contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-footer">
+                <div class="lang-toggle" role="group" aria-label="Seleção de idioma">
+                    <button class="lang-btn lang-btn--active" data-lang="pt-BR" aria-pressed="true">PT</button>
+                    <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true" hidden></div>
+    
+    <main id="main-content" role="main">
+        <!-- Services Hero -->
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <div class="page-hero-content">
+                    <span class="page-hero-badge" data-i18n="services.heroBadge">Soluções completas para sua marca</span>
+                    <h1 id="page-title" class="page-title" data-i18n="services.heroTitle">Serviços que transformam marcas</h1>
+                    <p class="page-subtitle" data-i18n="services.heroSubtitle">Da estratégia à execução: identidade visual, gestão de marca, fotografia, ambientação e presença digital — tudo integrado para construir marcas fortes e memoráveis na saúde mental.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Detail -->
+        <section class="services-detail" aria-labelledby="services-title">
+            <div class="container">
+                <!-- Service 1: Identidade Visual -->
+                <article class="service-detail" id="identidade-visual">
+                    <div class="service-detail-content">
+                        <header class="service-detail-header">
+                            <span class="service-number">01</span>
+                            <div class="service-detail-meta">
+                                <span class="service-icon" aria-hidden="true">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="2" y="2" width="20" height="20" rx="2"></rect>
+                                        <path d="M16 12h-8"></path>
+                                        <path d="M12 8v8"></path>
+                                    </svg>
+                                </span>
+                                <h2 id="services-title" class="service-detail-title" data-i18n="services.item1.title">Identidade Visual</h2>
+                            </div>
+                        </header>
+                        
+                        <p class="service-detail-description" data-i18n="services.item1.longDesc">Sua identidade visual é a face da sua marca. Criamos sistemas visuais completos que comunicam profissionalismo, acolhimento e autoridade — essenciais para quem atua na saúde mental.</p>
+                        
+                        <div class="service-deliverables">
+                            <h3 class="deliverables-title" data-i18n="services.deliverablesTitle">O que entregamos:</h3>
+                            <ul class="deliverables-list" role="list">
+                                <li data-i18n="services.item1.deliverable1">Logotipo principal + variações (horizontal, vertical, reduzido)</li>
+                                <li data-i18n="services.item1.deliverable2">Paleta de cores primária e secundária com códigos (HEX, RGB, CMYK, Pantone)</li>
+                                <li data-i18n="services.item1.deliverable3">Tipografia institucional (títulos, textos, digital)</li>
+                                <li data-i18n="services.item1.deliverable4">Iconografia e elementos gráficos de apoio</li>
+                                <li data-i18n="services.item1.deliverable5">Padrões e texturas da marca</li>
+                                <li data-i18n="services.item1.deliverable6">Manual de Identidade Visual (brand book) completo</li>
+                                <li data-i18n="services.item1.deliverable7">Arquivos vetoriais (AI, SVG, EPS) e raster (PNG, JPG)</li>
+                                <li data-i18n="services.item1.deliverable8">Templates para papelaria, redes sociais e documentos</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-detail-cta">
+                            <a href="/contato/" class="btn btn--primary" data-i18n="services.item1.cta">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-image" aria-hidden="true">
+                        <div class="service-image-wrapper">
+                            <img src="/assets/service-identidade.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Service 2: Gestão de Marca -->
+                <article class="service-detail service-detail--reverse" id="gestao-marca">
+                    <div class="service-detail-content">
+                        <header class="service-detail-header">
+                            <span class="service-number">02</span>
+                            <div class="service-detail-meta">
+                                <span class="service-icon" aria-hidden="true">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </span>
+                                <h2 class="service-detail-title" data-i18n="services.item2.title">Gestão de Marca</h2>
+                            </div>
+                        </header>
+                        
+                        <p class="service-detail-description" data-i18n="services.item2.longDesc">Uma marca forte precisa de governança. Definimos posicionamento, tom de voz e diretrizes para que sua comunicação seja consistente em todos os canais — do Instagram à recepção da clínica.</p>
+                        
+                        <div class="service-deliverables">
+                            <h3 class="deliverables-title" data-i18n="services.deliverablesTitle">O que entregamos:</h3>
+                            <ul class="deliverables-list" role="list">
+                                <li data-i18n="services.item2.deliverable1">Diagnóstico de marca atual (auditoria)</li>
+                                <li data-i18n="services.item2.deliverable2">Definição de posicionamento e proposta de valor</li>
+                                <li data-i18n="services.item2.deliverable3">Arquitetura de marca (se houver sub-marcas)</li>
+                                <li data-i18n="services.item2.deliverable4">Tom de voz e personalidade da marca</li>
+                                <li data-i18n="services.item2.deliverable5">Guia de comunicação (copywriting guidelines)</li>
+                                <li data-i18n="services.item2.deliverable6">Templates de posts, stories e materiais</li>
+                                <li data-i18n="services.item2.deliverable7">Plano de governança e uso da marca</li>
+                                <li data-i18n="services.item2.deliverable8">Treinamento da equipe para aplicação</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-detail-cta">
+                            <a href="/contato/" class="btn btn--primary" data-i18n="services.item2.cta">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-image" aria-hidden="true">
+                        <div class="service-image-wrapper">
+                            <img src="/assets/service-gestao.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Service 3: Fotografia -->
+                <article class="service-detail" id="fotografia">
+                    <div class="service-detail-content">
+                        <header class="service-detail-header">
+                            <span class="service-number">03</span>
+                            <div class="service-detail-meta">
+                                <span class="service-icon" aria-hidden="true">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                        <circle cx="12" cy="13" r="4"></circle>
+                                    </svg>
+                                </span>
+                                <h2 class="service-detail-title" data-i18n="services.item3.title">Fotografia Profissional</h2>
+                            </div>
+                        </header>
+                        
+                        <p class="service-detail-description" data-i18n="services.item3.longDesc">Imagens reais geram confiança. Fotografamos você, sua equipe, seu espaço e seu dia a dia com sensibilidade — transmitindo o acolhimento e a autoridade que seus pacientes buscam.</p>
+                        
+                        <div class="service-deliverables">
+                            <h3 class="deliverables-title" data-i18n="services.deliverablesTitle">O que entregamos:</h3>
+                            <ul class="deliverables-list" role="list">
+                                <li data-i18n="services.item3.deliverable1">Retratos individuais (profissional, lifestyle, detalhes)</li>
+                                <li data-i18n="services.item3.deliverable2">Fotos de equipe e dinâmica de trabalho</li>
+                                <li data-i18n="services.item3.deliverable3">Ambiente: consultório, recepção, salas de espera</li>
+                                <li data-i18n="services.item3.deliverable4">Detalhes: materiais, decoração, texturas</li>
+                                <li data-i18n="services.item3.deliverable5">Banco de imagens editadas em alta resolução</li>
+                                <li data-i18n="services.item3.deliverable6">Versões otimizadas para web e impressão</li>
+                                <li data-i18n="services.item3.deliverable7">Direitos de uso comercial ilimitados</li>
+                                <li data-i18n="services.item3.deliverable8">Direção de arte e produção inclusa</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-detail-cta">
+                            <a href="/contato/" class="btn btn--primary" data-i18n="services.item3.cta">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-image" aria-hidden="true">
+                        <div class="service-image-wrapper">
+                            <img src="/assets/service-fotografia.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Service 4: Decoração de Ambientes -->
+                <article class="service-detail service-detail--reverse" id="decoracao">
+                    <div class="service-detail-content">
+                        <header class="service-detail-header">
+                            <span class="service-number">04</span>
+                            <div class="service-detail-meta">
+                                <span class="service-icon" aria-hidden="true">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                    </svg>
+                                </span>
+                                <h2 class="service-detail-title" data-i18n="services.item4.title">Decoração de Ambientes</h2>
+                            </div>
+                        </header>
+                        
+                        <p class="service-detail-description" data-i18n="services.item4.longDesc">O ambiente físico é extensão da sua marca. Projetamos consultórios e clínicas que acolhem, transmitem profissionalismo e facilitam o fluxo de trabalho — do paciente à recepção.</p>
+                        
+                        <div class="service-deliverables">
+                            <h3 class="deliverables-title" data-i18n="services.deliverablesTitle">O que entregamos:</h3>
+                            <ul class="deliverables-list" role="list">
+                                <li data-i18n="services.item4.deliverable1">Projeto de layout e fluxograma do espaço</li>
+                                <li data-i18n="services.item4.deliverable2">Especificação de cores, materiais e acabamentos</li>
+                                <li data-i18n="services.item4.deliverable3">Mobiliário: seleção, medidas e fornecedores</li>
+                                <li data-i18n="services.item4.deliverable4">Iluminação: cenários para acolhimento e trabalho</li>
+                                <li data-i18n="services.item4.deliverable5">Sinalização e wayfinding integrado à marca</li>
+                                <li data-i18n="services.item4.deliverable6">Decoração: quadros, plantas, objetos, têxteis</li>
+                                <li data-i18n="services.item4.deliverable7">Acompanhamento de obra/implementação (opcional)</li>
+                                <li data-i18n="services.item4.deliverable8">Lista de compras com orçamentos</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-detail-cta">
+                            <a href="/contato/" class="btn btn--primary" data-i18n="services.item4.cta">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-image" aria-hidden="true">
+                        <div class="service-image-wrapper">
+                            <img src="/assets/service-decoracao.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Service 5: Sites e Apps -->
+                <article class="service-detail" id="digital">
+                    <div class="service-detail-content">
+                        <header class="service-detail-header">
+                            <span class="service-number">05</span>
+                            <div class="service-detail-meta">
+                                <span class="service-icon" aria-hidden="true">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="1" y="1" width="22" height="22" rx="2"></rect>
+                                        <path d="M1 12h22"></path>
+                                        <path d="M12 1v22"></path>
+                                    </svg>
+                                </span>
+                                <h2 class="service-detail-title" data-i18n="services.item5.title">Criação de Sites e Apps</h2>
+                            </div>
+                        </header>
+                        
+                        <p class="service-detail-description" data-i18n="services.item5.longDesc">Sua presença digital é muitas vezes o primeiro contato. Criamos sites institucionais, landing pages de conversão, sistemas de agendamento online e aplicativos — todos com foco em UX, performance e LGPD.</p>
+                        
+                        <div class="service-deliverables">
+                            <h3 class="deliverables-title" data-i18n="services.deliverablesTitle">O que entregamos:</h3>
+                            <ul class="deliverables-list" role="list">
+                                <li data-i18n="services.item5.deliverable1">Site institucional responsivo (WordPress ou static)</li>
+                                <li data-i18n="services.item5.deliverable2">Landing pages para campanhas específicas</li>
+                                <li data-i18n="services.item5.deliverable3">Sistema de agendamento online integrado</li>
+                                <li data-i18n="services.item5.deliverable4">Blog/canal de conteúdo otimizado para SEO</li>
+                                <li data-i18n="services.item5.deliverable5">Área do paciente (prontuário, documentos, pagamentos)</li>
+                                <li data-i18n="services.item5.deliverable6">Aplicativo mobile (iOS/Android) — nativo ou PWA</li>
+                                <li data-i18n="services.item5.deliverable7">Hospedagem, SSL, backups e manutenção</li>
+                                <li data-i18n="services.item5.deliverable8">LGPD compliance: cookies, termos, formulários</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-detail-cta">
+                            <a href="/contato/" class="btn btn--primary" data-i18n="services.item5.cta">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-image" aria-hidden="true">
+                        <div class="service-image-wrapper">
+                            <img src="/assets/service-digital.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Service 6: Consultoria -->
+                <article class="service-detail service-detail--reverse" id="consultoria">
+                    <div class="service-detail-content">
+                        <header class="service-detail-header">
+                            <span class="service-number">06</span>
+                            <div class="service-detail-meta">
+                                <span class="service-icon" aria-hidden="true">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                                        <path d="M12 6v6l4 2"></path>
+                                    </svg>
+                                </span>
+                                <h2 class="service-detail-title" data-i18n="services.item6.title">Consultoria Estratégica</h2>
+                            </div>
+                        </header>
+                        
+                        <p class="service-detail-description" data-i18n="services.item6.longDesc">Para quem quer autonomia. Fazemos diagnóstico completo, planejamento estratégico e mentoria para você e sua equipe gerirem a marca com confiança e consistência.</p>
+                        
+                        <div class="service-deliverables">
+                            <h3 class="deliverables-title" data-i18n="services.deliverablesTitle">O que entregamos:</h3>
+                            <ul class="deliverables-list" role="list">
+                                <li data-i18n="services.item6.deliverable1">Diagnóstico de marca e presença digital</li>
+                                <li data-i18n="services.item6.deliverable2">Análise de concorrência e posicionamento</li>
+                                <li data-i18n="services.item6.deliverable3">Planejamento estratégico de marca (12-24 meses)</li>
+                                <li data-i18n="services.item6.deliverable4">Definição de metas, KPIs e cronograma</li>
+                                <li data-i18n="services.item6.deliverable5">Mentoria mensal/quinzenal (3 a 12 meses)</li>
+                                <li data-i18n="services.item6.deliverable6">Templates e processos para gestão interna</li>
+                                <li data-i18n="services.item6.deliverable7">Revisão trimestral de resultados</li>
+                                <li data-i18n="services.item6.deliverable8">Suporte para decisões de comunicação</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="service-detail-cta">
+                            <a href="/contato/" class="btn btn--primary" data-i18n="services.item6.cta">Solicitar orçamento</a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-detail-image" aria-hidden="true">
+                        <div class="service-image-wrapper">
+                            <img src="/assets/service-consultoria.jpg" alt="" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Process Section -->
+        <section class="process-section" aria-labelledby="process-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="process-title" class="section-title" data-i18n="process.title">Nosso processo</h2>
+                    <p class="section-subtitle" data-i18n="process.subtitle">Metodologia testada e aprovada por dezenas de profissionais da saúde mental</p>
+                </header>
+                
+                <div class="process-steps">
+                    <article class="process-step">
+                        <div class="process-step-number">1</div>
+                        <h3 class="process-step-title" data-i18n="process.step1.title">Descoberta & Diagnóstico</h3>
+                        <p class="process-step-description" data-i18n="process.step1.desc">Imersão no seu negócio: história, valores, público, concorrentes, objetivos. Auditoria de marca atual (se houver) e pesquisa de mercado.</p>
+                    </article>
+                    
+                    <article class="process-step">
+                        <div class="process-step-number">2</div>
+                        <h3 class="process-step-title" data-i18n="process.step2.title">Estratégia & Planejamento</h3>
+                        <p class="process-step-description" data-i18n="process.step2.desc">Definição de posicionamento, arquitetura de marca, tom de voz, persona, jornada do paciente e roadmap de implementação.</p>
+                    </article>
+                    
+                    <article class="process-step">
+                        <div class="process-step-number">3</div>
+                        <h3 class="process-step-title" data-i18n="process.step3.title">Criação & Desenvolvimento</h3>
+                        <p class="process-step-description" data-i18n="process.step3.desc">Design da identidade visual, fotografia, projeto de ambientação, desenvolvimento do site/sistema — tudo em paralelo, integrado.</p>
+                    </article>
+                    
+                    <article class="process-step">
+                        <div class="process-step-number">4</div>
+                        <h3 class="process-step-title" data-i18n="process.step4.title">Validação & Entrega</h3>
+                        <p class="process-step-description" data-i18n="process.step4.desc">Apresentação, ajustes finos, entrega de todos os arquivos, manuais e treinamento da equipe. Suporte de 30 dias pós-entrega.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title" class="cta-title" data-i18n="cta.title">Pronta para transformar sua marca?</h2>
+                    <p class="cta-subtitle" data-i18n="cta.subtitle">Vamos conversar sobre seu projeto e entender como a Niero pode ajudar a construir uma marca forte, consistente e memorável.</p>
+                    <a href="/contato/" class="btn btn--primary btn--large" data-i18n="cta.button">Começar meu projeto</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo" aria-label="Niero - Página inicial">
+                        <img src="/assets/logo-niero-white.svg" alt="" width="140" height="40">
+                    </a>
+                    <p class="footer-tagline" data-i18n="footer.tagline">Posicionamento e construção de marcas para profissionais da saúde mental.</p>
+                    <div class="footer-social" role="list" aria-label="Redes sociais">
+                        <a href="https://instagram.com/espacovivenciapsico" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/company/niero" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5511976186096" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp" role="listitem">
+                            <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.company">Empresa</h4>
+                        <ul>
+                            <li><a href="/sobre/" data-i18n="nav.about">Sobre nós</a></li>
+                            <li><a href="/servicos/" data-i18n="nav.services">Serviços</a></li>
+                            <li><a href="/portfolio/" data-i18n="nav.portfolio">Portfólio</a></li>
+                            <li><a href="/contato/" data-i18n="nav.contact">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.services">Serviços</h4>
+                        <ul>
+                            <li><a href="/servicos/#identidade-visual" data-i18n="services.item1.title">Identidade Visual</a></li>
+                            <li><a href="/servicos/#gestao-marca" data-i18n="services.item2.title">Gestão de Marca</a></li>
+                            <li><a href="/servicos/#fotografia" data-i18n="services.item3.title">Fotografia</a></li>
+                            <li><a href="/servicos/#decoracao" data-i18n="services.item4.title">Decoração de Ambientes</a></li>
+                            <li><a href="/servicos/#digital" data-i18n="services.item5.title">Sites e Apps</a></li>
+                            <li><a href="/servicos/#consultoria" data-i18n="services.item6.title">Consultoria</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4 data-i18n="footer.nav.contact">Contato</h4>
+                        <ul>
+                            <li><a href="https://wa.me/5511976186096" target="_blank" rel="noopener noreferrer">WhatsApp: (11) 97618-6096</a></li>
+                            <li><a href="mailto:contato@niero.com.br">contato@niero.com.br</a></li>
+                            <li><address>Vila Pires, Santo André - SP</address></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright" data-i18n="footer.copyright">© 2025 Niero. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="/privacidade" data-i18n="footer.privacy">Política de Privacidade</a>
+                    <a href="/termos" data-i18n="footer.terms">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

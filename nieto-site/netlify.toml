@@ -1,22 +1,24 @@
+# Netlify Configuration for Niero Site
+# Deploy: connect repo → build command: (none) → publish directory: public
+
 [build]
+  # No build step - vanilla HTML/CSS/JS
   command = ""
   publish = "public"
-  functions = "netlify/functions"
 
-[build.environment]
-  NETLIFY_FRAMEWORK = "none"
-
-# Redirects
+# Clean URLs: /sobre/ → /sobre/index.html
 [[redirects]]
   from = "/*/"
   to = "/:splat/index.html"
   status = 200
 
+# Legacy .html → clean URLs
 [[redirects]]
   from = "/*.html"
   to = "/:splat/"
   status = 301
 
+# API routes (if using Netlify Functions later)
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"
@@ -32,7 +34,7 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     X-XSS-Protection = "1; mode=block"
 
-# Cache static assets
+# Cache static assets aggressively
 [[headers]]
   for = "/assets/*"
   [headers.values]
@@ -48,19 +50,18 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# HTML - no cache
+# HTML - no cache, must revalidate
 [[headers]]
   for = "*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
-# Favicon cache
+# Favicon and robots
 [[headers]]
   for = "/favicon*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Robots & sitemap
 [[headers]]
   for = "/robots.txt"
   [headers.values]
