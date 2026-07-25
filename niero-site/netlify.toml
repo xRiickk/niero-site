@@ -1,0 +1,73 @@
+# Netlify Configuration for Niero Site
+# Deploy: connect repo → build command: (none) → publish directory: public
+
+[build]
+  # No build step - vanilla HTML/CSS/JS
+  command = ""
+  publish = "public"
+
+# Clean URLs: /sobre/ → /sobre/index.html
+[[redirects]]
+  from = "/*/"
+  to = "/:splat/index.html"
+  status = 200
+
+# Legacy .html → clean URLs
+[[redirects]]
+  from = "/*.html"
+  to = "/:splat/"
+  status = 301
+
+# API routes (if using Netlify Functions later)
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    X-XSS-Protection = "1; mode=block"
+
+# Cache static assets aggressively
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML - no cache, must revalidate
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Favicon and robots
+[[headers]]
+  for = "/favicon*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
