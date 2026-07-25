@@ -1,6 +1,6 @@
 /* ==========================================================================
-   NIERO — DESIGN SYSTEM (Jenna Style + Niero Colors)
-   Based on Jenna Canva Template: https://ellvycreativetemplates.my.canva.site/jenna-website-template
+   NIERO — DESIGN SYSTEM (Jenna Style Pixel-Perfect + Niero Colors)
+   Based on: https://ellvycreativetemplates.my.canva.site/jenna-website-template
    ========================================================================== */
 
 /* ===== Niero Brand Colors (preserved) ===== */
@@ -40,9 +40,9 @@
   --shadow-inner: inset 0 2px 4px rgba(55, 52, 53, 0.04);
 
   /* ===== Typography (Jenna Style) ===== */
-  --font-display: 'Cormorant Garamond', Georgia, serif;  /* The Seasons equivalent */
+  --font-display: 'Playfair Display', Georgia, serif;  /* The Seasons equivalent */
   --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;  /* Canva Sans/Arimo equivalent */
-  --font-script: 'Cormorant Garamond', Georgia, serif;   /* Beautifully Delicious Script equivalent - use italic */
+  --font-script: 'Playfair Display', Georgia, serif;   /* Beautifully Delicious Script equivalent - use italic */
 
   /* Fluid type scale (clamp) - Jenna generous sizing */
   --text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.8rem);
