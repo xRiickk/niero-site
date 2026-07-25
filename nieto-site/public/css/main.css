@@ -397,8 +397,8 @@ ul, ol { list-style: none; }
 .theme-toggle:hover { background: var(--bg-tertiary); color: var(--color-wine); }
 .theme-toggle .icon-sun { display: block; }
 .theme-toggle .icon-moon { display: none !important; }
-[data-theme="dark"] .theme-toggle .icon-sun { display: block !important; }
-[data-theme="dark"] .theme-toggle .icon-moon { display: none !important; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: none !important; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: block !important; }
 
 /* Mobile Menu Button */
 .mobile-menu-btn {
