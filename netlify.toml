@@ -1,0 +1,7 @@
+[build]
+  base = "niero-site"
+  command = "test -f public/index.html"
+  publish = "public"
+
+[build.environment]
+  NETLIFY_FRAMEWORK = "none"
